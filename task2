@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    char op;
+    float num1, num2;
+ 
+    cout << "Enter two numbers : ";
+    cin >> num1 >> num2;
+    
+    cout << "Enter your choice (+,-,*,/) : ";
+    cin >> op;
+ 
+    switch (op)
+    {       
+        // If user enter +
+        case '+':
+            cout << "Addition of " << num1 << " and " << num2 << " is " << num1 + num2;
+            break;
+         
+        // If user enter -
+        case '-':
+            cout << "Subtraction of " << num1 << " and " << num2 << " is " << num1 - num2;
+            break;
+         
+        // If user enter *
+        case '*':
+            cout << "Multiplication of " << num1 << " and " << num2 << " is " << num1 * num2;
+            break;
+         
+        // If user enter /
+        case '/':
+            cout << "Division of " << num1 << " and " << num2 << " is " << num1 / num2;
+            break;
+         
+        // If the operator is other than +, -, * or / then error messsage will displayed
+        default:
+            cout << "Error! operator is not correct";
+            
+	}
+ 
+    return 0;
+}
